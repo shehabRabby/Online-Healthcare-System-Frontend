@@ -41,11 +41,9 @@ export default function VerifyAccountForm() {
     if (resendTimer <= 0) {
       return;
     }
-
     const timer = setInterval(() => {
       setResendTimer((prev) => prev - 1);
     }, 1000);
-
     return () => clearInterval(timer);
   }, []);
 
