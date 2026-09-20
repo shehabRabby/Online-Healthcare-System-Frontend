@@ -1,7 +1,7 @@
-import React from "react";
-
-const layout = () => {
-  return <div>approve doctor layout component</div>;
-};
-
-export default layout;
+export default function layout() {
+  return (
+    <div>
+      <h1> This is layout component </h1>
+    </div>
+  );
+}
