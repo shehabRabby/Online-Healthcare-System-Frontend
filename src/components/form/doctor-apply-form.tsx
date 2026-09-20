@@ -40,6 +40,7 @@ import { DoctorApplicationData } from "@/types";
 
 import { Textarea } from "../ui/textarea";
 import { useApplyAsDoctor } from "@/hooks/doctor.hook";
+import { formatFileSize } from "@/utils";
 
 //* Data signature
 // {
@@ -72,8 +73,8 @@ export default function DoctorApplyForm() {
       specialization: "Cardiologist",
       licenseNumber: "ABC123",
       qualifications: "MBBS",
-      experienceYears: "50",
-      consultationFee: "10000",
+      experienceYears: "30",
+      consultationFee: "3000",
       bio: "My life, my rules.",
       resume: null as File | null,
       additionalFiles: [] as File[],
@@ -118,7 +119,7 @@ export default function DoctorApplyForm() {
     <div className="flex flex-col gap-6 ">
       <div className="flex flex-col gap-2 text-center">
         <h1 className="text-2xl font-bold tracking-tight">
-          Apply to join PH Healthcare
+          Apply to join Online Healthcare System
         </h1>
       </div>
 
@@ -616,6 +617,8 @@ export default function DoctorApplyForm() {
               );
             }}
           </form.Field>
+
+
         </FieldGroup>
         <div className="flex justify-end w-full mt-5">
           <Button type="submit" size="lg">

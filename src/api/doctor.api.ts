@@ -1,8 +1,6 @@
 import apiClient from "@/lib/apiClient";
 import { DoctorApplicationPayload } from "@/types";
 
-
-
 export function applyAsDoctor(payload: DoctorApplicationPayload) {
   const formData = new FormData();
 
@@ -13,7 +11,7 @@ export function applyAsDoctor(payload: DoctorApplicationPayload) {
     formData.append("additionalFiles", file);
   }
 
-  return apiClient("/doctor/apply-as-doctor", {
+  return apiClient("/doctors/apply-as-doctor", {
     method: "POST",
     body: formData,
   });

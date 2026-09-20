@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function Header() {
   const routes = [
     { name: "Home", url: "/" },
-    { name: "About us", url: "/about-us" },
+    { name: "About us", url: "/about" },
   ];
 
   const { data, isLoading } = useGetMe();
