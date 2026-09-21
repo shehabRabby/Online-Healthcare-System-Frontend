@@ -10,7 +10,7 @@ const LoginPage = () => {
           <Link href="/" className="flex items-center gap-2 font-medium">
             <div className="flex items-center gap-2">
               <Logo></Logo>
-              <span> HealthCare</span>
+              <span>Online HealthCare</span>
             </div>
           </Link>
         </div>
