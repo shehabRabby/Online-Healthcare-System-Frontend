@@ -2,13 +2,11 @@
 
 import { Suspense, useState } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
+import type { ScheduleParams, ScheduleStatus } from "@/types";
 import ScheduleListLoading from "./schedule-list-loading";
 import ScheduleTable from "./schedule-table";
 import { Button } from "@/components/ui/button";
 import ScheduleCreateDialog from "./doctor-create-dialog";
-import { ScheduleParams, ScheduleStatus } from "@/types";
-
 
 const statuses: ["ALL" | ScheduleStatus, string][] = [
   ["ALL", "All"],
