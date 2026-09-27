@@ -151,4 +151,4 @@ export default function DoctorBooking({ doctorId }: { doctorId: string }) {
   );
 }
 
-//Payment failed => http://localhost:3000/dashboard/my-appointments?status=failue
+//Payment failed => http://localhost:3000/dashboard/my-appointments?status=failuer
